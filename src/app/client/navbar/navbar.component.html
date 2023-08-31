@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3 me-5" [routerLink]="['']"><img src="assets/img/LaCapsule.png" width="90rem"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse fs-5 d-flex" id="navbarScroll" >
+  
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 160px;">
+  
+          <li class="nav-item">
+            <a class="nav-link active me-5 " aria-current="page" [routerLink]="['']">Acceuil</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active me-5 " aria-current="page" [routerLink]="['ateliers']">Ateliers</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active me-5 " aria-current="page" [routerLink]="['intervenants']">Intervenants</a>
+          </li>
+  
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ateliers
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ateliersList">Liste</a></li>
+              <li><a class="dropdown-item" href="ateliersForm">Ajouter</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Intervenants
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="intervenantsList">Liste</a></li>
+              <li><a class="dropdown-item" href="intervenantsForm">Ajouter</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calendrier</a>
+          </li>
+   -->
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search"> -->
+          
+            <a [routerLink]="['admin']">
+              <img style="width: 2vw;" src="../../../assets/icone/login.png" alt="">
+              Login
+            </a>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+
