@@ -10,7 +10,7 @@ const routes: Routes = [
   {path:'admin', loadChildren: () => import ('./admin/admin.module')  // Permet de charger le module "admin"
     .then(m => m.AdminModule)},
 
-  {path:'authentification', loadChildren:() => import('./authentification/authentification.module')
+  {path:'authentification', loadChildren:() => import('./authentification/authentification.module') // Permet de charger le module "authentification"
     .then(m => m.AuthentificationModule)},
     
   { path: '**', component: ErrorComponent} // Permet, en cas de route non trouvée, d'envoyer vers le component Erreur et l'image error404

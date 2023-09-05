@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AteliersComponent } from './ateliers/ateliers.component';
 import { IntervenantsComponent } from './intervenants/intervenants.component';
 import { ClientLayoutComponent } from './client-layout/client-layout.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
 
@@ -12,7 +13,8 @@ const routes: Routes = [
   //{ path: '', redirectTo: 'home', pathMatch: 'full' }, 1ère méthode : Permet la redirection vers home quand on arrive à la source
     { path: '', component: HomeComponent }, // 2eme méthode ( plus rapide et facile)
     { path: 'ateliers', component: AteliersComponent },
-    { path: 'intervenants', component: IntervenantsComponent }
+    { path: 'intervenants', component: IntervenantsComponent },
+    { path: 'contact', component: ContactComponent }
 
   ]}
 

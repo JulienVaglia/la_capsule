@@ -1,20 +1,19 @@
-<div class="container w-100 mt-5" style="height: 100vh;">
+<div class="container w-100 mt-5">
     <div class="form-signin mx-auto text-center d-flex justify-content-center">
         <form class="w-25">
-            <img class="mb-4" style="margin-top: 17vh;" src="../../../assets/img/LaCapsule.png" alt="" width="160"
-                height="auto">
-            <h1 class="h3 mb-3 fw-normal">Connexion</h1>
+            <a class="navbar-brand ms-3 me-5" [routerLink]="['']"><img class="ms-4 mb-4" style="margin-top: 17vh;" src="assets/img/LaCapsule.png" alt="" width="160"height="auto"></a>
+            <h1 class="h3 mb-4 fw-normal">Connexion</h1>
 
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <div class="form-floating mb-1">
+                <input type="email" class="form-control shadow border-0" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Adresse Email</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control shadow border-0" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Mot de passe</label>
             </div>
-            <button class="btn btn-primary w-100 py-2 mt-2" type="submit">Se connecter</button>
-            <button class="btn mt-3" type="submit">S'inscrire</button>
+            <button class="btn btn-primary w-75 mt-3 shadow" type="submit">Se connecter</button>
+            <button [routerLink]="['/authentification/register']" class="btn mt-3" type="submit">S'inscrire</button>
 
 
         </form>
