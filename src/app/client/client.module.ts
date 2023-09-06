@@ -7,6 +7,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ClientRoutingModule } from './client-routing.module';
 import { ClientLayoutComponent } from './client-layout/client-layout.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 
@@ -21,7 +24,9 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     CommonModule,
-    ClientRoutingModule
+    ClientRoutingModule,
+    MatCardModule, 
+    MatButtonModule
   ]
 })
 export class ClientModule { }
